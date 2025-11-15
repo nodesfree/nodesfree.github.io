@@ -230,12 +230,12 @@ reward:
   enable: true
   text: 你的支持是我更新的最大动力！
   QR_code:
-    - img: /img/background/sponsor/wechat.png
+    - img: /img/background/sponsor/1.png
       link:
-      text: 微信 WeChat
-    - img: /img/background/sponsor/alipay.png
+      text: USDT TRC20网络
+    - img: /img/background/sponsor/solana.png
       link:
-      text: 支付宝 Alipay
+      text: USDC SOL网络
 
 # Post edit
 # Easily browse and edit blog source code online.
