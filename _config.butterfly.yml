@@ -25,8 +25,6 @@ menu:
   友链 Links: /link/ || fas fa-link
   留言板 Comments Board: /comments/ || fas fa-comments
   关于 About: /about/ || fas fa-heart
-  旧站点 Old Site: https://dora-honor.github.io/mskk-blog || fas fa-history
-  源代码 Source Code: https://github.com/Dora-Honor/dora-honor.github.io || fab fa-github
 
 # --------------------------------------
 # Code Blocks Settings
@@ -51,23 +49,23 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  fab fa-github: https://github.com/Dora-Honor || Github || '#24292e'
-  fas fa-envelope: mailto:dorahonor@gmail.com || Email || '#4a7dbe'
-  fab fa-youtube: https://youtube.com/@dorahonor_mskk || YouTube || '#ff3d00'
-  fab fa-bilibili: https://space.bilibili.com/68026760 || 哔哩哔哩 bilibili || '#e76a8d'
-  fab fa-zhihu: https://www.zhihu.com/people/dorahonor || 知乎 Zhihu || '#1772f6'
-  iconfont icon-xiaohongshu: https://www.xiaohongshu.com/user/profile/63b56120000000002702a843 || 小红书 Xiaohongshu/Redbook || '#ff2424'
-  iconfont icon-coolapk: http://www.coolapk.com/u/1744954 || 酷安 Coolapk || '#0caa64'
-  fab fa-weibo: https://weibo.com/u/5635501226 || 微博 Weibo || '#ff9a30'
-  fab fa-x-twitter: https://x.com/dora_honor || X (Twitter) || '000000'
-  fab fa-bluesky: https://bsky.app/profile/dora-honor.bsky.social || Bluesky || '#0886fe'
-  fab fa-threads: https://threads.net/@dora_honor || Threads || '#000000'
-  fab fa-instagram: https://instagram.com/dora_honor || Instagram || '#ff1d31'
-  fab fa-facebook: https://www.facebook.com/dora.honor.944 || Facebook || '#0866ff'
-  fab fa-spotify: https://open.spotify.com/user/31tnk5f4als6u4r7kcg2mj2dqq4a || Spotify || '#1ed760'
-  iconfont icon-netease-cloud-music: https://music.163.com/#/user/home?id=436313178 || 网易云音乐 NetEase Cloud Music || '#fc3b5b'
-  fab fa-chrome: https://www.miyoushe.com/ys/accountCenter/postList?id=295708491 || 米游社 || '#66e0ff'
-  iconfont icon-hoyolab: https://hoyolab.com/accountCenter/postList?id=300847631 || HoYoLAB || '#6680ff'
+  fab fa-github: https://github.com/ || Github || '#24292e'
+  fas fa-envelope: mailto:@gmail.com || Email || '#4a7dbe'
+  fab fa-youtube: https://youtube.com/ || YouTube || '#ff3d00'
+  fab fa-bilibili: https://space.bilibili.com/ || 哔哩哔哩 bilibili || '#e76a8d'
+  fab fa-zhihu: https://www.zhihu.com/people/ || 知乎 Zhihu || '#1772f6'
+  iconfont icon-xiaohongshu: https://www.xiaohongshu.com/user/profile/ || 小红书 Xiaohongshu/Redbook || '#ff2424'
+  iconfont icon-coolapk: http://www.coolapk.com/u/ || 酷安 Coolapk || '#0caa64'
+  fab fa-weibo: https://weibo.com/u/ || 微博 Weibo || '#ff9a30'
+  fab fa-x-twitter: https://x.com/ || X (Twitter) || '000000'
+  fab fa-bluesky: https://bsky.app/profile/ || Bluesky || '#0886fe'
+  fab fa-threads: https://threads.net/ || Threads || '#000000'
+  fab fa-instagram: https://instagram.com/ || Instagram || '#ff1d31'
+  fab fa-facebook: https://www.facebook.com/ || Facebook || '#0866ff'
+  fab fa-spotify: https://open.spotify.com/user/ || Spotify || '#1ed760'
+  iconfont icon-netease-cloud-music: https://music.163.com/#/user/home?id= || 网易云音乐 NetEase Cloud Music || '#fc3b5b'
+  fab fa-chrome: https://www.miyoushe.com/ys/accountCenter/postList?id= || 米游社 || '#66e0ff'
+  iconfont icon-hoyolab: https://hoyolab.com/accountCenter/postList?id= || HoYoLAB || '#6680ff'
 
 # --------------------------------------
 # Image Settings
@@ -310,7 +308,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: GitHub
-      link: https://github.com/Dora-Honor
+      link: https://github.com/
   card_announcement:
     enable: true
     content:
@@ -764,9 +762,9 @@ ad:
 
 site_verification:
   - name: google-site-verification
-    content: 2v1UADJqpZJ5KqKWgUqA294HZa_-NdcQIohtosPH2dc
+    content: 
   - name: bing-site-auth
-    content: 2FCD3C6000E75D57EDD2C2CED90140DC
+    content: 
 
 # --------------------------------------
 # Beautify / Effect
