@@ -1,34 +1,35 @@
 {
-  "name": "hexo-theme-butterfly",
-  "version": "5.5.2",
-  "description": "A Simple and Card UI Design theme for Hexo",
-  "main": "package.json",
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
   },
-  "keywords": [
-    "hexo",
-    "theme",
-    "butterfly",
-    "Card UI Design",
-    "Jerry",
-    "hexo-theme-butterfly"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jerryc127/hexo-theme-butterfly.git"
-  },
-  "bugs": {
-    "url": "https://github.com/jerryc127/hexo-theme-butterfly/issues",
-    "email": "my@crazywong.com"
+  "hexo": {
+    "version": "8.1.1"
   },
   "dependencies": {
+    "gitalk": "^1.8.0",
+    "hexo": "^8.1.1",
+    "hexo-deployer-git": "^4.0.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-searchdb": "^1.5.0",
+    "hexo-generator-seo-friendly-sitemap": "^0.2.1",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-markdown-it": "^7.1.1",
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.1",
-    "hexo-util": "^4.0.0",
-    "moment-timezone": "^0.6.0"
-  },
-  "homepage": "https://butterfly.js.org/",
-  "author": "Jerry <my@crazywong.com>",
-  "license": "Apache-2.0"
+    "hexo-server": "^3.0.0",
+    "hexo-theme-butterfly": "^5.5.1",
+    "hexo-theme-landscape": "^1.1.0",
+    "hexo-wordcount": "^6.0.1",
+    "markdown-it-merge-cells": "^2.0.0",
+    "markdown-it-task-checkbox": "^1.0.6"
+  }
 }
