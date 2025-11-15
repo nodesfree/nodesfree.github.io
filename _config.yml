@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://dora-honor.github.io/
+url: https://nodesfree.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -106,7 +106,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/Dora-Honor/dora-honor.github.io
+  repository: https://github.com/nodesfree/nodesfree.github.io
   branch: main
 
 # 修改 Markdown 渲染引擎，详见 https://github.com/hexojs/hexo-renderer-markdown-it
