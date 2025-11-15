@@ -1,0 +1,16 @@
+- class_name: 技术支持
+  class_desc: Powered by
+  link_list: 
+    - name: Hexo 
+      link: https://hexo.io/zh-cn/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简单且强大的网页框架 A fast, simple & powerful blog framework
+      siteshot: https://source.fomal.cc/siteshot/hexo.io.jpg
+    - name: Hexo-theme-butterfly
+      link: https://butterfly.js.org/
+      avatar: https://butterfly.js.org/img/butterfly-icon.png
+      descr: A Simple and Card UI Design theme for Hexo
+    - name: GitHub, GitHub Pages
+      link: https://github.com/
+      avatar: https://raw.githubusercontent.com/Dora-Honor/mskk-blog/23032661ec37d5c643e4c852936ce2921ea46d18/Images/background/github-mark.svg
+      descr: 全球最大的代码托管站 The world’s biggest code hosting site
