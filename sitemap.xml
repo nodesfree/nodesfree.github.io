@@ -3,8 +3,23 @@
 
 
     <sitemap>
+        <loc>https://nodesfree.github.io/post-sitemap.xml</loc>
+        <lastmod>2025-11-15T11:13:43.188Z</lastmod>
+    </sitemap>
+
+    <sitemap>
         <loc>https://nodesfree.github.io/page-sitemap.xml</loc>
-        
+        <lastmod>2025-11-15T11:13:43.208Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://nodesfree.github.io/category-sitemap.xml</loc>
+        <lastmod>2025-11-15T11:13:43.188Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://nodesfree.github.io/tag-sitemap.xml</loc>
+        <lastmod>2025-11-15T11:13:43.188Z</lastmod>
     </sitemap>
 
 </sitemapindex>
