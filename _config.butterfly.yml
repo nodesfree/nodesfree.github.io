@@ -230,10 +230,10 @@ reward:
   enable: true
   text: 你的支持是我更新的最大动力！
   QR_code:
-    - img: /img/background/sponsor/1.png
+    - img: /img/background/sponsor/1.jpg
       link:
       text: USDT TRC20网络
-    - img: /img/background/sponsor/solana.png
+    - img: /img/background/sponsor/solana.jpg
       link:
       text: USDC SOL网络
 
