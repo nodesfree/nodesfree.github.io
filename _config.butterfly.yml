@@ -580,11 +580,11 @@ livere:
 # Gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
-  client_id: Ov23liYpmdJlt3q851aq
-  client_secret: 15bae88bcabbc88347cd0cf36d4f3f03d0013d82
-  repo: dora-honor.github.io
-  owner: Dora-Honor
-  admin: Dora-Honor
+  client_id: 
+  client_secret: 
+  repo: 
+  owner: 
+  admin: 
   option: 
 
 # Valine
@@ -648,9 +648,9 @@ twikoo:
 # Giscus
 # https://giscus.app/
 giscus:
-  repo: Dora-Honor/dora-honor.github.io
-  repo_id: R_kgDOPFqS2A
-  category_id: DIC_kwDOPFqS2M4CsiZj
+  repo: nodesfree/nodesfree.github.io
+  repo_id: R_kgDOQWBspg
+  category_id: DIC_kwDOQWBsps4Cx0bI
   light_theme: light
   dark_theme: dark
   js:
