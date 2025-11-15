@@ -283,7 +283,7 @@ footer:
   copyright:
     enable: true
     version: true
-  custom_text: 欢迎来到 mskk 的个人博客！ Welcome to mskk’s personal blog!
+  custom_text: 欢迎来到 nodesfree 的个人博客！ Welcome to nodesfree personal blog!
 
 # --------------------------------------
 # Aside Settings
@@ -608,7 +608,7 @@ waline:
   # Use Waline pageview count as the page view count
   pageview: false
   option:
-    requiredMeta: [ 'Dora Honor', dorahonor@gmail.com ]
+    requiredMeta: [ 'nodesfree', nodesfree@gmail.com ]
     reaction: true
     locale:
       placeholder: 说点什么吧（昵称和邮箱为必填项。为了你能及时收到相关回复的邮件通知，请确保邮箱的正确性！）
