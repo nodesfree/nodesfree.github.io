@@ -11,7 +11,7 @@
     
     <url>
         <loc>https://nodesfree.github.io/link/</loc>
-        <lastmod>2025-11-16T07:44:57.796Z</lastmod>
+        <lastmod>2025-11-16T08:04:26.402Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -20,7 +20,7 @@
     
     <url>
         <loc>https://nodesfree.github.io/tags/</loc>
-        <lastmod>2025-11-16T07:44:57.796Z</lastmod>
+        <lastmod>2025-11-16T08:04:26.402Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -29,7 +29,7 @@
     
     <url>
         <loc>https://nodesfree.github.io/comments/</loc>
-        <lastmod>2025-11-16T07:44:57.776Z</lastmod>
+        <lastmod>2025-11-16T08:04:26.382Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -38,16 +38,7 @@
     
     <url>
         <loc>https://nodesfree.github.io/categories/</loc>
-        <lastmod>2025-11-16T07:44:57.776Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>https://nodesfree.github.io/archive/</loc>
-        <lastmod>2025-11-16T07:44:57.557Z</lastmod>
+        <lastmod>2025-11-16T08:04:26.382Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -56,7 +47,16 @@
     
     <url>
         <loc>https://nodesfree.github.io/about/</loc>
-        <lastmod>2025-11-16T07:44:57.557Z</lastmod>
+        <lastmod>2025-11-16T08:04:26.164Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://nodesfree.github.io/archive/</loc>
+        <lastmod>2025-11-16T08:04:26.164Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
