@@ -598,7 +598,7 @@ valine:
   serverURLs:
   bg:
   # Use Valine visitor count as the page view count
-  visitor: false
+  visitor: true
   option:
 
 # Waline - A simple comment system with backend support fork from Valine
@@ -607,7 +607,7 @@ waline:
   serverURL: https://darling-pixie-2320de.netlify.app/.netlify/functions/comment
   bg:
   # Use Waline pageview count as the page view count
-  pageview: false
+  pageview: true
   option:
     requiredMeta: [ 'nodesfree', nodesfree@gmail.com ]
     reaction: true
