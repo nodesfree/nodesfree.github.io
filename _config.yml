@@ -174,12 +174,37 @@ feed:
   icon:
   autodiscovery: true
   template:
+# hexo-generator-feed
+## Docs: https://github.com/hexojs/hexo-generator-feed
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon:
+  autodiscovery: true
+  template:
+
+# hexo-filter-nofollow
+## Docs: https://github.com/hexojs/hexo-filter-nofollow
+nofollow:
+  enable: true
+  field: site
+  exclude:
+    - 'www.justlaws.cn'
+
+baidusitemap:
+  path: baidusitemap.xml
+  tag: false
+  category: false
+  
 # sitemap 网站地图
 sitemap:
   path: sitemap.xml
-  tag: false
-  category: false
-baidusitemap:
-  path: baidusitemap.xml
   tag: false
   category: false
