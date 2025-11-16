@@ -639,11 +639,11 @@ facebook_comments:
 
 # Twikoo
 # https://github.com/imaegoo/twikoo
-twikoo:
-  envId:
+twikoo: 
+  envId: https://nodesfree.github.io/twikoo-comment
   region:
   # Use Twikoo visitor count as the page view count
-  visitor: false
+  visitor: true
   option:
 
 # Giscus
@@ -765,7 +765,7 @@ site_verification:
   - name: google-site-verification
     content: QNU2tRBUzUNttlsdpLe_u1jMHYUS2ZVQ4TyrlzjuQfQ
   - name: bing-site-auth
-    content: 
+    content: 8959750DEFB84C8CE56F6F8AD122DCA3
   - name: yandex-site-auth
     content: 3288d0235bfcd23d
 # --------------------------------------
