@@ -1,6 +1,5 @@
-# hexo robots.txt
-User-agent: 
-Allow: /
+User-agent: *
+Disallow:
 Allow: /archives/
 Allow: /tags/
 Allow: /categories/
