@@ -1,0 +1,70 @@
+/* 页脚透明 */
+#footer {
+  background: transparent !important;
+}
+/* 页脚黑色透明玻璃效果移除 */
+#footer::before {
+  background: transparent !important;
+}
+/* 头图透明 */
+#page-header {
+  background: transparent !important;
+}
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
+#page-header.post-bg:before {
+  background-color: transparent !important;
+}
+#page-header:not(.not-top-img):before {
+  background-color: transparent !important;
+}
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"] #footer::before {
+  background: transparent !important;
+}
+[data-theme="dark"] #page-header::before {
+  background: transparent !important;
+}
+
+.clock-row,
+.card-clock-time {
+  font-family: ZhuZiAYuanJWD !important;
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+
+.card-clock-weather {
+  flex-basis: calc(30% + 50px) !important;
+}
+
+.card-clock-location {
+  flex-basis: calc(30% + 250px) !important;
+}
+
+.card-background {
+  box-shadow: inset 3px 3px 18px 0 rgb(50 50 50 / 15%) !important;
+}
+
+@media screen and (min-width: 768px) {
+  #tidio-chat-iframe {
+    transform: translateX(-41px) !important;
+  }
+}
+
+#site-title {
+  font-family: Chalkboard_SE, ZhuZiAYuanJWD !important;
+  font-weight: normal !important;
+}
+
+.fontawesomeIcon,
+hr:before,
+#post .post-outdate-notice:before,
+.note:not(.no-icon)::before {
+  font-family: "Font Awesome 6 Pro" !important;
+}
+
+.gitcalendar {
+  font-family: ZhuZiAYuanJWD;
+  /* margin-top: 20px; */
+  border-radius: 8px;
+  background-color: var(--card-bg);
+}
