@@ -1169,3 +1169,16 @@ electric_clock:
   gaud_map_key: # 高得地图web服务key
   default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气
   rectangle: 120.15515,30.27415 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置
+
+gitcalendar:
+  enable: false
+  #设为true时使用canvas绘制gitgitcalendar，
+  #设为false时使用svg绘制gitgitcalendar
+  simplemode: false
+  user: ImCa0
+  apiurl:  # 留空为默认公共API
+  color: "['#ebedf0', '#CBE3FF', '#79B7FF', '#83BCFF', '#59A6FF', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
+
+replace_link:
+  alias: 'source@'
+  replacement: https://cdn.imcao.cn/source
