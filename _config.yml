@@ -176,7 +176,7 @@ feed:
   order_by: -date
   icon:
   autodiscovery: true
-  template:
+  
 
 # hexo-filter-nofollow
 ## Docs: https://github.com/hexojs/hexo-filter-nofollow
