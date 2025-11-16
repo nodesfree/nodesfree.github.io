@@ -29,10 +29,14 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-  - googleee2249751ec6188b.html
+  - google91bb4eef58d84a0f.html
   - BingSiteAuth.xml
   - README.md
-  - README_ZH.md
+  - yandex_3288d0235bfcd23d.html
+  - robots.txt 
+  - sitemap.xml
+  - e09326f12bbc407794124e619d25d9ff.txt
+  
 
 # Writing
 new_post_name: :title.md # File name of new posts
