@@ -766,7 +766,8 @@ site_verification:
     content: QNU2tRBUzUNttlsdpLe_u1jMHYUS2ZVQ4TyrlzjuQfQ
   - name: bing-site-auth
     content: 
-
+  - name: yandex-site-auth
+    content: 3288d0235bfcd23d
 # --------------------------------------
 # Beautify / Effect
 # --------------------------------------
