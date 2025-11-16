@@ -4,22 +4,12 @@
 
     <sitemap>
         <loc>https://nodesfree.github.io/post-sitemap.xml</loc>
-        <lastmod>2025-11-16T12:45:28.066Z</lastmod>
+        <lastmod>2025-11-16T12:48:11.255Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>https://nodesfree.github.io/page-sitemap.xml</loc>
-        <lastmod>2025-11-16T12:45:28.302Z</lastmod>
-    </sitemap>
-
-    <sitemap>
-        <loc>https://nodesfree.github.io/category-sitemap.xml</loc>
-        <lastmod>2025-11-16T12:45:28.066Z</lastmod>
-    </sitemap>
-
-    <sitemap>
-        <loc>https://nodesfree.github.io/tag-sitemap.xml</loc>
-        <lastmod>2025-11-16T12:45:28.066Z</lastmod>
+        <lastmod>2025-11-16T12:48:11.489Z</lastmod>
     </sitemap>
 
 </sitemapindex>
