@@ -19,12 +19,13 @@ nav:
 
 menu:
   首页 Home: / || fas fa-home
+  科学上网高速翻墙机场推荐: /about/ || fas fa-heart
   归档 Archive: /archives/ || fas fa-archive
   标签 Tags: /tags/ || fas fa-tags
   分类 Categories: /categories/ || fas fa-folder-open
   友链 Links: /link/ || fas fa-link
   留言板 Comments Board: /comments/ || fas fa-comments
-  科学上网高速翻墙机场推荐: /about/ || fas fa-heart
+# 科学上网高速翻墙机场推荐: /about/ || fas fa-heart
 
 # --------------------------------------
 # Code Blocks Settings
@@ -50,7 +51,7 @@ code_blocks:
 #   icon: link || the description || color
 social:
   fab fa-github: https://github.com/ || Github || '#24292e'
-  fas fa-envelope: mailto:@gmail.com || Email || '#4a7dbe'
+  fas fa-envelope: mailto:w8vkyamzzfjqv1e@gmail.com || Email || '#4a7dbe'
   fab fa-youtube: https://youtube.com/ || YouTube || '#ff3d00'
   fab fa-bilibili: https://space.bilibili.com/ || 哔哩哔哩 bilibili || '#e76a8d'
   fab fa-zhihu: https://www.zhihu.com/people/ || 知乎 Zhihu || '#1772f6'
@@ -228,7 +229,7 @@ post_copyright:
 # Sponsor/reward
 reward:
   enable: true
-  text: 你的支持是我更新的最大动力！
+  text: 点击赞助USDT/USDC你的赞助支持是我们更新的最大动力！
   QR_code:
     - img: /img/background/sponsor/1.jpg
       link:
@@ -243,7 +244,7 @@ post_edit:
   enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url: https://github.com/Dora-Honor/dora-honor.github.io/edit/main/source/
+  url: https://github.com/nodesfree/nodesfree.github.io/edit/main/source/
 
 # Related Articles
 related_post:
@@ -762,7 +763,7 @@ ad:
 
 site_verification:
   - name: google-site-verification
-    content: 
+    content: QNU2tRBUzUNttlsdpLe_u1jMHYUS2ZVQ4TyrlzjuQfQ
   - name: bing-site-auth
     content: 
 
