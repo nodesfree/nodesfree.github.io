@@ -161,19 +161,7 @@ markdown:
     lazyload: false
     prepend_root: false
     post_asset: false
-feed:
-  enable: true
-  type: atom
-  path: atom.xml
-  limit: 20
-  hub:
-  content:
-  content_limit: 140
-  content_limit_delim: ' '
-  order_by: -date
-  icon:
-  autodiscovery: true
-  template:
+
 # hexo-generator-feed
 ## Docs: https://github.com/hexojs/hexo-generator-feed
 feed:
