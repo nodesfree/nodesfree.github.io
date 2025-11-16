@@ -1,57 +1,112 @@
 ---
-title: Hexo + Butterfly 评论系统配置总结
-date: 2025-07-06 15:10:11
-tags: GitHub Pages
-categories: 踩坑记录
+title: 最新公益免费v2ray节点订阅地址、免费节点每日更新 更新时间 2025-11-16
+date: 2025-11-16
+keywords: v2rayShare,免费节点,SSR,SS,shadowsocks,科学上网,翻墙,VPN
+description: 纯公益免费节点分享网，提供免费节点订阅链接，每天都会精选高速稳定节点供大家免费使用，支持ss/ssr/v2ray/vmess/trojan/clash等众多协议
+tags: 
+  - ssr
+  - vpn
+  - trojan
+  - v2ray
+  - vmess
+  - ss
+  - fanqiang
+  - v2rayfree
+  - clash
+  - clash节点
+  - mihomo
+  - v2ray节点
+  - 免费节点
+  - 订阅地址
+  - 订阅链
+categories:
+  - 免费节点
+  - 订阅地址
 ---
 
-最近在用 Hexo 框架加 Butterfly 主题搭建自己的 GitHub Pages 博客，想给自己的博客加入评论系统。
+## 前言
 
-最常用的评论系统有 [Gitalk](https://gitalk.github.io/) 和 [Giscus](https://giscus.app/zh-CN)。其中，前者主要依赖仓库的 [Issues](https://github.com/Dora-Honor/dora-honor.github.io/issues)，后者则依赖 [Discussions](https://github.com/Dora-Honor/dora-honor.github.io/discussions)。
+本站免费节点全部来源于网络，仅用于学习和交流之用。
 
-我首先试了下 Gitalk。虽然配置对我来说并不是什么难事，但我在测试评论的时候遇到了以下问题：
+因很多人使用以及提供方流量限制，无法保障长时间的稳定性和可用性。
 
-- 在不同设备、账号上，同文章评论区内容不同步，且 Issues 话题重复。 ![](https://raw.githubusercontent.com/Dora-Honor/mskk-blog/refs/heads/main/Images/250706/image_2025-07-06_15-27-01.png)
+如果想获得更好的使用体验，建议购买本站推荐的付费机场节点，更稳更快更舒服！
+## 准备工作
 
-- 报错。
+本次更新节点，包括 [美国、新加坡、加拿大、香港、欧洲、日本、韩国] 等，
 
-``` Git Bash
-FATAL Something's wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html
-TypeError: Cannot read properties of undefined (reading 'gitalk')
-    at Hexo.<anonymous> (D:\Documents\hexo-blog-butterfly\node_modules\hexo-plugin-gitalk\index.js:2:41)
-    at Hexo.tryCatcher (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\util.js:16:23)
-    at Hexo.<anonymous> (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\method.js:15:34)
-    at D:\Documents\hexo-blog-butterfly\node_modules\hexo\dist\extend\filter.js:58:67
-    at tryCatcher (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\util.js:16:23)
-    at Object.gotValue (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\reduce.js:166:18)
-    at Object.gotAccum (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\reduce.js:155:25)
-    at Object.tryCatcher (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\util.js:16:23)
-    at Promise._settlePromiseFromHandler (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\promise.js:547:31)
-    at Promise._settlePromise (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\promise.js:604:18)
-    at Promise._settlePromise0 (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\promise.js:649:10)
-    at Promise._settlePromises (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\promise.js:729:18)
-    at _drainQueueStep (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\async.js:93:12)
-    at _drainQueue (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\async.js:86:9)
-    at Async._drainQueues (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\async.js:102:5)
-    at Async.drainQueues [as _onImmediate] (D:\Documents\hexo-blog-butterfly\node_modules\bluebird\js\release\async.js:15:14)
-    at process.processImmediate (node:internal/timers:485:21)
-```
-虽然 Gitalk 界面美观，但还是因此放弃了。后续有时间再研究以下怎么搞吧。
+复制下面的节点数据，可以使用下方的订阅链接，导入或者粘贴到v2ray/iso小火箭/winxray科学上网工具，直接使用即可。
 
-然后我再试了下 Giscus。目前用下来，除了界面不如 Gitalk 美观，其他都还好，同文章评论区内容也能同步。
 
-## 本人配置 Giscus 的总结
-- 注册 GitHub 账号和创建仓库（这个不用多说了吧）。
-- 安装 [Giscus App](https://github.com/apps/giscus)。
-- 在账户设置中，在 [Integrations] 选择 [Applications]，找到 [giscus] 在 [Repository access] 中选择 [Only select repository]，并设置为所需仓库。完成后单击 [Save] 保存设置。 ![](https://raw.githubusercontent.com/Dora-Honor/mskk-blog/refs/heads/main/Images/250706/image_2025-07-06_15-40-20.png)
-- 进入**所需仓库**的设置，在 [General] - [Features] 处勾选 [Discussions]。保存设置。
-- 刷新仓库页面，选择 [Discussions] 选项卡，单击 [Categories] 右边的笔（编辑）按钮，选择 [New category]，在 [Category name] 处输入 “Announcements”（不带引号），**[Discussion Format] 处一定要选择 [Annoucement]！**
-- [单击这里](https://giscus.app/zh-CN)进入 Giscus 配置，在【仓库】处输入你的用户名和仓库（格式为 `username/repositories`），【页面 ↔️ discussion 映射关系】处保持默认的第一项或选择第二项，【Discussion 分类】选择刚刚保存的【Annoucement】，特性和主题根据自己喜好选择。
-- 打开 `_config.butterfly.yml` 配置文件，找到 `# comments system` 项，在 `use` 处输入 `Giscus`（注意冒号后面要一个空格间隔），`text`、`lazyload`、`count`、`card_post_count` 则根据你自己的喜好来调整。
-- 往下翻，找到 `# Giscus` 选项，在 `repo` 处填写对应的用户名和仓库（格式 `username/repositories`），`repo_id` 和 `category_id` 处填写 Giscus 生成的 ID，`light_theme` 和 `dark_theme` 项保持不动，`js` 和 `opition` 根据需求设置即可。
-- **注意冒号后面要一个空格间隔，参数则不带引号！否则会出现评论发不出去的问题！**
+## 正式开始
 
-# 参考资料
-- hexo-butterfly主题-giscus评论系统设置 - 知乎. https://zhuanlan.zhihu.com/p/603658639
-- Giscus 配置. https://giscus.app/zh-CN
-- Butterfly 文檔(三) 主題配置 | Butterfly. https://butterfly.js.org/posts/4aa8abbe/#%E8%A9%95%E8%AB%96
+## ⚠️ 注意
+
+所有链接来自网络，仅作学习使用
+
+使用页面所提供的任意资源时，请务必遵守当地法律
+
+➖➖➖➖➖➖➖➖➖➖
+
+## 高速翻墙机场推荐
+
+➖➖➖➖➖➖➖➖➖➖
+
+### [🐮88云加速机场 10元/月 每月200g](https://88cloud.pages.dev/)
+
+### ➡️不跑路 ➡️快 ➡️稳 ➡️服务好
+
+### 🚀 全直连线路-高速稳定
+
+### 🎬 最新隐私协议保护客户隐私
+
+### 🤖 流媒体/ChatGPT全部解锁
+
+### 🔥 大流量下载专用节点
+
+### [✈️ TG群组 ](https://t.me/+gfS8zRPNWMdmMjg1)          [🔗 官方网站 ](https://88cloud.pages.dev/)
+
+### [注册地址：【88云加速官网（点击注册）】 ](https://88cloud.dpdns.org/#/register?code=LSpR3sOK)
+
+➖➖➖➖➖➖➖➖➖➖
+
+### [高速机场推荐1【冲上云霄】 ](https://cpdd.one/?r=42354)
+
+试用：1天 1G
+
+无视高峰，不限制设备数量，全天4K秒开，机房遍布全球，IP多多益善，99%流媒体解锁，油管、葫芦、奈菲，小电影丝般顺滑！ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选择，现在注册即可免费试用！
+
+### [网站注册地址：【冲上云霄（点击注册）】 ](https://cpdd.one/?r=42354)
+
+➖➖➖➖➖➖➖➖➖➖
+
+### [高速机场推荐2【星辰VPN】 ](http://c.xcvpn.me/?path=register&code=jWv0CnPO)
+
+机场套餐流量多，8元每月的套餐，速度与节点数量就很给力了，不限制登陆设备数量，解锁奈飞迪士尼流媒体、ChatGPT、TikTok等；节点国家很多，全球有80多个国家节点，冷门国家也有；支持ChatGPT所有版本，网页版与app版都解锁支持；强力推荐的机场，非常好用。
+
+### [网站注册地址：【星辰VPN官网（点击注册）】 ](http://c.xcvpn.me/?path=register&code=jWv0CnPO)
+
+➖➖➖➖➖➖➖➖➖➖
+
+### [高速机场推荐3【西游云】 ](https://www.xiyou666.xyz/?path=register&code=LQzUg4EU)
+
+注册就有2G的免费流量，上网速度给力；全球80多个节点地址，支持支持东南亚、印尼、非洲等很多冷门国家，有不限时流量套餐；解锁奈飞迪士尼流媒体、ChatGPT、TikTok等，推荐机场，稳定好用。
+
+### [网站注册地址：【西游云官网（点击注册）】 ](https://www.xiyou666.xyz/?path=register&code=LQzUg4EU)
+
+➖➖➖➖➖➖➖➖➖➖
+
+### [高速机场推荐4【飞鸟加速】 ](https://www.112112789.xyz/?path=register&code=7Y5uXPTq)
+
+自有机房专柜，多地专线高速节点，极速跨境体验；支持多设备同时使用，无设备数量限制；一键解锁Netflix、Disney+、TikTok等全球流媒体，GPT专属线路支持，保障ChatGPT等AI服务高可用；站长强力推荐的机场，稳定流畅好用。
+
+### [网站注册地址：【飞鸟加速官网（点击注册）】 ](https://www.112112789.xyz/?path=register&code=7Y5uXPTq)
+
+➖➖➖➖➖➖➖➖➖➖
+
+### v2ray订阅链接
+
+   https://nodesfree.github.io/v2raynode/subscribe/v2ray.txt 
+
+  
+   https://nodesfree.github.io/v2raynode/v2ray.txt 
