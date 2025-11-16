@@ -1,2 +1,17 @@
-User-agent: 
-Disallow: /
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /tags/
+Allow: /categories/
+Allow: /about/
+
+Allow:: /comments/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /assets/
+
+Sitemap: https://nodesfree.github.io/sitemap.xml
+
