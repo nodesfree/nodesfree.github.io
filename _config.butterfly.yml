@@ -456,9 +456,12 @@ wordcount:
   min2read: true
   # Display the total word count of the website in aside's webinfo
   total_wordcount: true
-
+  item_text: true
+  totalcount: true
+  separated_meta: true
 # Busuanzi count for PV / UV in site
 busuanzi:
+  enable: true
   site_uv: true
   site_pv: true
   page_pv: true
