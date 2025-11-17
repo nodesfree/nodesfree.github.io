@@ -18,13 +18,13 @@ nav:
   fixed: false
 
 menu:
-  首页 Home: / || fas fa-home
+  首页: / || fas fa-home
   科学上网高速翻墙机场推荐: /about/ || fas fa-heart
-  归档 Archive: /archives/ || fas fa-archive
-  标签 Tags: /tags/ || fas fa-tags
-  分类 Categories: /categories/ || fas fa-folder-open
-  友链 Links: /link/ || fas fa-link
-  留言板 Comments Board: /comments/ || fas fa-comments
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  友链: /link/ || fas fa-link
+  留言板: /comments/ || fas fa-comments
 # 科学上网高速翻墙机场推荐: /about/ || fas fa-heart
 
 # --------------------------------------
