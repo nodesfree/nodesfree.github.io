@@ -13,4 +13,6 @@ Disallow: /vendors/
 Disallow: /assets/
 
 Sitemap: https://nodesfree.github.io/sitemap.xml
+Sitemap: https://nodesfree.github.io/post-sitemap.xml
+Sitemap: https://nodesfree.github.io/page-sitemap.xml
 
