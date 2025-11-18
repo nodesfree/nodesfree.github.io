@@ -285,16 +285,15 @@ footer:
   copyright:
     enable: true
     version: true
+  custom_text: 欢迎来到 nodesfree 的个人博客！ Welcome to nodesfree personal blog!
+
   QR_code:
-    enable: true
     - img: /img/background/sponsor/1.jpg
       link:
       text: USDT TRC20网络
     - img: /img/background/sponsor/solana.jpg
       link:
-      text: USDC SOL网络    
-  custom_text: 欢迎来到 nodesfree 的个人博客！ Welcome to nodesfree personal blog!
-  
+      text: USDC SOL网络      
 
 # --------------------------------------
 # Aside Settings
