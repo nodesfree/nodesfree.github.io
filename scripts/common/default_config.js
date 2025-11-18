@@ -242,7 +242,7 @@ module.exports = {
     }
   },
   wordcount: {
-    enable: false,
+    enable: true,
     post_wordcount: true,
     min2read: true,
     total_wordcount: true
