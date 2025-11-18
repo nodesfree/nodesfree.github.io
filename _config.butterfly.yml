@@ -314,7 +314,14 @@ aside:
   card_announcement:
     enable: true
     content:
-      - 这是我的个人博客。<br>This is my personal blog.
+    - 这是我的个人博客。<br>感谢赞助USDT/USDC你的赞助支持是我们更新的最大动力！.
+    - img: /img/background/sponsor/1.jpg
+      link:
+      text: USDT TRC20网络
+    - img: /img/background/sponsor/solana.jpg
+      link:
+      text: USDC SOL网络
+  
   card_recent_post:
     enable: true
     # If set 0 will show all
