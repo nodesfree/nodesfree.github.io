@@ -50,7 +50,7 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  fab fa-telegram: https://t.me/clashjd || Github || '#0886fe'
+  fab fa-telegram: https://t.me/clashjd || Telegram || '#0886fe'
   fab fa-github: https://github.com/nodesfree.github.io || Github || '#24292e'
   fas fa-envelope: mailto:w8vkyamzzfjqv1e@gmail.com || Email || '#4a7dbe'
   fab fa-youtube: https://youtube.com/ || YouTube || '#ff3d00'
