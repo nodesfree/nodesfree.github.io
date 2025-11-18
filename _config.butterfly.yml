@@ -285,6 +285,7 @@ footer:
   copyright:
     enable: true
     version: true
+  QR_code:
     - img: /img/background/sponsor/1.jpg
       link:
       text: USDT TRC20网络
