@@ -322,11 +322,7 @@ aside:
   card_announcement:
     enable: true
     content:
-      -  这是我的个人博客。<br>
-      感谢赞助USDT/USDC你的赞助支持是我们更新的最大动力！<br> TVoG1TzpsipVPBCdym6cCQbecqaHfgecmg
-      <br>  USDT TRC20网络
-      <br> AYKx8uLdbsENiPgzeQCe8K1NpDo9kzAL4jqRVyKRq8H3
-     <br>  USDC SOL网络
+      -  这是我的个人博客。<br>感谢赞助USDT/USDC你的赞助支持是我们更新的最大动力！<br> TVoG1TzpsipVPBCdym6cCQbecqaHfgecmg<br>USDT TRC20网络<br> AYKx8uLdbsENiPgzeQCe8K1NpDo9kzAL4jqRVyKRq8H3<br>USDC SOL网络
   
   card_recent_post:
     enable: true
