@@ -41,4 +41,29 @@ if theme.aside.card_webinfo.enable
         .webinfo-item
           .item-name= `${_p('aside.card_webinfo.last_push_date.name')} :`
           .item-count#last-push-date(data-lastPushDate=date_xml(Date.now()))
+
             i.fa-solid.fa-spinner.fa-spin
+script.
+    function checkPv(){ 
+        var init_pv = parseInt(!{theme.busuanzi.init_pv})
+        var pv = document.getElementById("busuanzi_value_site_pv")
+        if (pv.innerText === ''){
+        setTimeout(checkPv, 100)
+        } else {
+            pv.innerText = parseInt(pv.innerText) + init_pv
+        }
+    }
+script checkPv()
+
+script.
+    function checkUv(){ 
+        var init_uv = parseInt(!{theme.busuanzi.init_uv})
+        var uv = document.getElementById("busuanzi_value_site_uv")
+        if (uv.innerText === ''){
+        setTimeout(checkUv, 100)
+        }else{
+            uv.innerText = parseInt(uv.innerText) + init_uv
+        }
+    }
+script checkUv()
+
