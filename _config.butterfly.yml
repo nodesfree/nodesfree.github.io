@@ -285,7 +285,7 @@ footer:
   copyright:
     enable: true
     version: true
-  custom_text: 欢迎来到 nodesfree 的个人博客！ Welcome to nodesfree personal blog!
+  custom_text: 欢迎来到 nodesfree 的个人博客！ 每天分享免费公益节点、最新v2ray节点|clash节点免费节点订阅地址!
 
   QR_code:
     - img: /img/background/sponsor/1.jpg
@@ -313,7 +313,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description: 大家我都喜欢哦 Everyone I like
+    description: 每天分享免费公益节点、最新v2ray节点|clash节点免费节点订阅地址 Everyone I like
     button:
       enable: true
       icon: fab fa-github
@@ -322,7 +322,7 @@ aside:
   card_announcement:
     enable: true
     content:
-      -  这是我的个人博客。<br>感谢赞助USDT/USDC你的赞助支持是我们更新的最大动力！<br> https://v50.yfuye.com/ 
+      - 感谢赞助USDT/USDC你的赞助支持是我们更新的最大动力！<br> https://v50.yfuye.com/ 
   card_recent_post:
     enable: true
     # If set 0 will show all
