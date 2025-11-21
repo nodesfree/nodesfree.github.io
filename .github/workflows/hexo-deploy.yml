@@ -34,7 +34,6 @@ jobs:
         run: |
           cd source
           npm install
-          npm i hexo-shokax-busuanzi --save
           npx hexo clean
           npx hexo generate
 
