@@ -1,0 +1,92 @@
+name: IndexNow Submission
+
+# 触发条件：当内容推送到 main 分支时执行
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      # 忽略不包含内容更改的文件，提高效率
+      - 'README.md'
+      - '.github/**'
+
+jobs:
+  submit_indexnow:
+    runs-on: ubuntu-latest
+    
+    # 设置环境变量，方便后续步骤使用
+    env:
+      INDEXNOW_HOST: nodesfree.github.io
+      # 从 Secrets 中获取密钥
+      INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+      # 密钥文件的位置
+      INDEXNOW_KEY_LOCATION: https://nodesfree.github.io/${{ secrets.INDEXNOW_KEY }}.txt
+
+    steps:
+      - name: ⬇️ Checkout code
+        uses: actions/checkout@v4
+        with:
+          # 仅获取最近的两次提交，用于比较哪些文件发生了变化
+          fetch-depth: 2
+
+      # -------------------------------------------------------------
+      # 💡 核心步骤：找出本次提交中新增或修改的 .md 或 .html 文件
+      # -------------------------------------------------------------
+      - name: 🔍 Find changed files
+        id: changed-files
+        # 使用 git diff 获取在当前提交和前一个提交之间发生变化的文件的列表
+        run: |
+          # 获取修改和新增的文件列表，并过滤出 markdown/html 文件
+          CHANGED_URLS=$(git diff --name-only HEAD^ HEAD | grep -E '\.(md|html)$' | while read FILE; do
+            # 假设您的文件路径能映射到 URL 路径
+            # 这是一个示例转换，您可能需要根据您的静态生成器调整
+            # 1. 移除文件扩展名 (.md, .html)
+            # 2. 替换文件路径分隔符 '/' 为 URL 路径
+            # 3. 加上完整的 host
+            
+            # 简化的 URL 转换逻辑 (示例: _posts/hello.md -> https://host/posts/hello)
+            URL_PATH=$(echo "$FILE" | sed -E 's/\.(md|html)$//' | sed 's/^_//')
+            echo "https://${{ env.INDEXNOW_HOST }}/$URL_PATH/"
+          done)
+          
+          # 将找到的 URL 列表设置为输出变量
+          echo "URL_LIST_RAW=$CHANGED_URLS" >> $GITHUB_OUTPUT
+          echo "Found URLs: $CHANGED_URLS"
+
+      - name: 🚧 Check if URLs were found
+        run: |
+          if [ -z "${{ steps.changed-files.outputs.URL_LIST_RAW }}" ]; then
+            echo "No relevant URLs changed. Skipping IndexNow submission."
+            exit 0
+          fi
+          
+      - name: 📦 Format URL List to JSON Array
+        id: format-json
+        run: |
+          # 将原始 URL 字符串转换为 JSON 数组格式
+          URL_LIST_JSON=$(echo "${{ steps.changed-files.outputs.URL_LIST_RAW }}" | tr '\n' ',' | sed 's/,$//' | sed 's/,/","/g' | sed 's/^/["/' | sed 's/$/"]/')
+          echo "URL_LIST_JSON=$URL_LIST_JSON" >> $GITHUB_OUTPUT
+          echo "JSON Payload URL List: $URL_LIST_JSON"
+        
+      # -------------------------------------------------------------
+      # 🚀 最终步骤：发送 IndexNow POST 请求
+      # -------------------------------------------------------------
+      - name: 📢 Send IndexNow Request
+        run: |
+          # 构造完整的 JSON 请求体
+          JSON_PAYLOAD='{
+            "host": "${{ env.INDEXNOW_HOST }}",
+            "key": "${{ env.INDEXNOW_KEY }}",
+            "keyLocation": "${{ env.INDEXNOW_KEY_LOCATION }}",
+            "urlList": '${{ steps.format-json.outputs.URL_LIST_JSON }}'
+          }'
+          
+          echo "Sending payload:"
+          echo "$JSON_PAYLOAD"
+          
+          # 使用 curl 发送 POST 请求
+          curl -X POST 'https://api.indexnow.org/IndexNow' \
+          -H 'Content-Type: application/json; charset=utf-8' \
+          -d "$JSON_PAYLOAD"
+          
+          echo "IndexNow submission complete."
