@@ -15,4 +15,4 @@ Disallow: /assets/
 Sitemap: https://nodesfree.github.io/sitemap.xml
 Sitemap: https://nodesfree.github.io/post-sitemap.xml
 Sitemap: https://nodesfree.github.io/page-sitemap.xml
-
+sitemap: https://a527127.sitemaphosting7.com/4631522/sitemap_4631522.xml
