@@ -283,7 +283,7 @@ footer:
     since: 2025
   # Copyright of theme and framework
   copyright:
-    enable: true
+    enable: false
     version: false
   custom_text: 欢迎来到 nodesfree 的个人博客！ 每天分享免费公益节点、最新v2ray节点|clash节点免费节点订阅地址!
 
