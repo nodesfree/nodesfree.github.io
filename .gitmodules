@@ -1,4 +1,0 @@
-[submodule "butterfly"]
-	path = themes/butterfly
-	url = https://github.com/nodesfree/hexo-theme-butterfly.git
-	branch = dev
