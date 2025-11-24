@@ -322,7 +322,7 @@ aside:
   card_announcement:
     enable: true
     content:
-      - 感谢赞助USDT/USDC你的赞助支持是我们更新的最大动力！<br><center><b>--- 感谢赞助v我50 ---<br> <a href="https://v50.yfuye.com/"title="感谢赞助v我50" class="anno_content"><font color="#5ea6e5">a 
+      - 感谢赞助USDT/USDC你的赞助支持是我们更新的最大动力！<br><center><b>--- 感谢赞助v我50 ---<br> <a href="https://v50.yfuye.com/"title="感谢赞助v我50" class="anno_content"><font color="#5ea6e5">https://v50.yfuye.com/
   card_recent_post:
     enable: true
     # If set 0 will show all
