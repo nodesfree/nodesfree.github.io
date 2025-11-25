@@ -1,7 +1,7 @@
 ---
 title: 更新时间 2025-11-25 最新公益免费v2ray|clash节点订阅地址、免费节点每日更新 
 date: 2025-11-25
-abbrlink: 20251124d
+abbrlink: 20251125d
 keywords: 
   - v2rayShare
   - 免费节点
