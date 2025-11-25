@@ -285,7 +285,7 @@ footer:
   copyright:
     enable: false
     version: false
-  custom_text: 欢迎来到 nodesfree 的个人博客！ 每天分享免费公益节点、最新v2ray节点|clash节点免费节点订阅地址!
+  custom_text: 欢迎来到 nodesfree！ 每天分享免费公益节点、最新v2ray节点|clash节点免费节点订阅地址!
 
   QR_code:
     - img: /img/background/sponsor/1.jpg
@@ -731,17 +731,17 @@ microsoft_clarity:
 
 # https://umami.is/
 umami_analytics:
-  enable: false
+  enable: true
   # For self-hosted setups, configure the hostname of the Umami instance
-  serverURL:
-  website_id:
+  serverURL: https://umami.ccknbc.cc
+  website_id: 350b8ab7-530f-40b5-81d2-3cced4749c75
   option:
   UV_PV:
-    site_uv: false
-    site_pv: false
-    page_pv: false
+    site_uv: true
+    site_pv: true
+    page_pv: true
     # Umami Cloud (API key) / self-hosted Umami (token)
-    token:
+    token: YWg2j79TuJjDQdwt9mMCMQmA+DZbXfaBDzvWjsJfAW6C3kjx1/gb3+CvXNu7QoSF72QpRNcHzOb1Uzva7VTMOiwQXNx7YKHvjMMitVasb4n/jjxKvdJg20U/K0wyebQSxwoEDZ0w2oqDWhnU1FpIyC6Kdbm5S3MElUF+krJyw+EVq6WscU404kJL6wuIHVG18qK/ZoRocY8l+SNiVpwlsVDdybrxJ0q4eoL3HL57P2GAlM7ZZSSTuj3doq/ETM7eQ5EzjISSDSmasddYnEeX8StBf0Ud24foYVM/KpK82RnBA9R/mGn/bA+ow0vyGHpTgME4UlOaaMMeRWqstHP1tleLkKj5hCl7cA==
 
 # https://www.googletagmanager.com/
 google_tag_manager:
