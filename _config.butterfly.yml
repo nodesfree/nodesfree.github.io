@@ -782,6 +782,20 @@ site_verification:
     content: 8959750DEFB84C8CE56F6F8AD122DCA3
   - name: yandex-site-auth
     content: 3288d0235bfcd23d
+
+# Add the vendor prefixes to ensure compatibility
+css_prefix: true
+
+# Inject
+# Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
+inject:
+  head:
+    # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/butterfly/custom.css">
+  bottom:
+    # - <script src="xxxx"></script>
+
+# CDN Settings    
 # --------------------------------------
 # Beautify / Effect
 # --------------------------------------
