@@ -1,7 +1,6 @@
 ---
 title: 更新时间 2025-11-19 最新公益免费v2ray|clash节点订阅地址、免费节点每日更新 
 date: 2025-11-19
-abbrlink: 20251119d
 keywords: v2rayShare,免费节点,SSR,SS,shadowsocks,科学上网,翻墙,VPN
 description: 纯公益免费节点分享网，提供免费节点订阅链接，每天都会精选高速稳定节点供大家免费使用，支持ss/ssr/v2ray/vmess/trojan/clash等众多协议
 tags: 
