@@ -1,6 +1,6 @@
 ---
 title: 更新时间 2026-4-8 2025年4月8日最新公益免费v2ray|clash节点订阅地址、免费节点每日更新 
-date: 2026-4-7
+date: 2026-4-8
 keywords: 
   - v2rayShare
   - 免费节点
