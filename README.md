@@ -24,11 +24,11 @@
 
 ➖➖➖➖➖➖➖➖➖➖
 
-### [高速机场推荐2【星辰VPN】 ](http://c.xcvpn.me/?path=register&code=jWv0CnPO)
+### [高速机场推荐2【星辰VPN】 ](http://c.kilxs.cn/?path=register&code=jWv0CnPO)
 
 机场套餐流量多，8元每月的套餐，速度与节点数量就很给力了，不限制登陆设备数量，解锁奈飞迪士尼流媒体、ChatGPT、TikTok等；节点国家很多，全球有80多个国家节点，冷门国家也有；支持ChatGPT所有版本，网页版与app版都解锁支持；强力推荐的机场，非常好用。
 
-### [网站注册地址：【星辰VPN官网（点击注册）】 ](http://c.xcvpn.me/?path=register&code=jWv0CnPO)
+### [网站注册地址：【星辰VPN官网（点击注册）】 ](http://c.kilxs.cn/?path=register&code=jWv0CnPO)
 
 ➖➖➖➖➖➖➖➖➖➖
 
