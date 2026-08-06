@@ -32,11 +32,11 @@
 
 ➖➖➖➖➖➖➖➖➖➖
 
-### [高速机场推荐3【西游云】 ](https://www.xiyou666.xyz/?path=register&code=LQzUg4EU)
+### [高速机场推荐3【西游云】 ](https://d.xiyou666.xyz/?code=LQzUg4EU)
 
 注册就有2G的免费流量，上网速度给力；全球80多个节点地址，支持支持东南亚、印尼、非洲等很多冷门国家，有不限时流量套餐；解锁奈飞迪士尼流媒体、ChatGPT、TikTok等，推荐机场，稳定好用。
 
-### [网站注册地址：【西游云官网（点击注册）】 ](https://www.xiyou666.xyz/?path=register&code=LQzUg4EU)
+### [网站注册地址：【西游云官网（点击注册）】 ](https://d.xiyou666.xyz/?code=LQzUg4EU)
 
 ➖➖➖➖➖➖➖➖➖➖
 
