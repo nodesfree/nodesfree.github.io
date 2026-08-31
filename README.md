@@ -1,4 +1,4 @@
-# 最新免费公益节点订阅地址、2026年8月30日更新 每天更新免费节点
+# 最新免费公益节点订阅地址、2026年8月31日更新 每天更新免费节点
 
 #### 请勿用于非法用途,所有免费节点都爬取自网络!
 
@@ -6,7 +6,7 @@
 
 ➖➖➖➖➖➖➖➖➖➖
 
-### [🐮88云加速机场 10元/月 每月200g](https://88cloud.pages.dev/)
+### [🐮88云加速机场 10元/月 每月200g](https://qq.88cloud.dpdns.org/#/register?code=n4KLfZJb)
 
 ### ➡️不跑路 ➡️快 ➡️稳 ➡️服务好
 
@@ -18,7 +18,7 @@
 
 ### 🔥 大流量下载专用节点
 
-### [✈️ TG群组 ](https://t.me/+gfS8zRPNWMdmMjg1)          [🔗 官方网站 ](https://88cloud.pages.dev/)
+### [✈️ TG群组 ](https://t.me/+gfS8zRPNWMdmMjg1)          [🔗 官方网站 ](https://qq.88cloud.dpdns.org/#/register?code=n4KLfZJb)
 
 ### [注册地址：【88云加速官网（点击注册）】 ](https://88cloud.dpdns.org/#/register?code=LSpR3sOK)
 
