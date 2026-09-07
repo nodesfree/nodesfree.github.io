@@ -35,5 +35,8 @@
     "hexo-wordcount": "^6.0.1",
     "markdown-it-merge-cells": "^2.0.0",
     "markdown-it-task-checkbox": "^1.0.6"
+  },
+  "overrides": {
+    "ejs": "3.1.7"
   }
 }
