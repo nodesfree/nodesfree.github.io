@@ -76,7 +76,7 @@ categories:
  - #### 🎬 最新隐私协议保护客户隐私
  - #### 🔥 大流量下载专用节点
  - #### 🤖 流媒体/ChatGPT全部解锁
-### [✈️ TG群组 ](https://t.me/+gfS8zRPNWMdmMjg1)          [🔗 官方网站 ](https://88cloud.pages.dev/)
+### [✈️ TG群组 ](https://t.me/+gfS8zRPNWMdmMjg1)          [🔗 官方网站 ](https://qq.88cloud.dpdns.org/)
 
 ### [注册地址：【88云加速官网（点击注册）】 ](https://qq.88cloud.dpdns.org/#/register?code=LSpR3sOK)
 
