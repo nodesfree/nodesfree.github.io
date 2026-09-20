@@ -33,22 +33,26 @@ jobs:
               exit(1)
 
           # 寻找 _posts 下所有的 md 或 markdown 文件
-          files = glob.glob(os.path.join(posts_dir, "*.md")) + glob.glob(os.path.join(posts_dir, "*.markdown"))
-          if not files:
-              print("No posts found.")
+          all_files = glob.glob(os.path.join(posts_dir, "*.md")) + glob.glob(os.path.join(posts_dir, "*.markdown"))
+          
+          # 筛选出以 YYYY-MM-DD 开头的文件
+          valid_files = []
+          for file in all_files:
+              basename = os.path.basename(file)
+              if re.match(r'^\d{4}-\d{2}-\d{2}', basename):
+                  valid_files.append((basename, file))
+
+          if not valid_files:
+              print("No posts starting with YYYY-MM-DD found.")
               exit(0)
 
           # 按文件名降序排序，获取最新的文件
-          files.sort(reverse=True)
-          latest_file = files[0]
+          valid_files.sort(key=lambda x: x[0], reverse=True)
+          latest_basename, latest_file = valid_files[0]
           print(f"Latest file found: {latest_file}")
 
-          # 提取旧日期 (匹配文件名开头的 YYYY-MM-DD)
-          basename = os.path.basename(latest_file)
-          date_match = re.match(r'^(\d{4}-\d{2}-\d{2})', basename)
-          if not date_match:
-              print("Latest file name does not start with YYYY-MM-DD.")
-              exit(1)
+          # 提取旧日期
+          date_match = re.match(r'^(\d{4}-\d{2}-\d{2})', latest_basename)
           old_date_str = date_match.group(1)
 
           # 获取当天的日期
@@ -58,7 +62,7 @@ jobs:
               exit(0)
 
           # 生成新文件名并构建路径
-          new_basename = basename.replace(old_date_str, today_str, 1)
+          new_basename = latest_basename.replace(old_date_str, today_str, 1)
           new_file = os.path.join(posts_dir, new_basename)
 
           if os.path.exists(new_file):
