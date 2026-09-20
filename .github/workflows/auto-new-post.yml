@@ -105,11 +105,10 @@ jobs:
               with open(readme_path, 'r', encoding='utf-8') as f:
                   readme_content = f.read()
 
-              # 方案 A: 匹配并替换 README 中形如 YYYY-MM-DD 的日期（如果存在旧的）
-              # 通过正则查找任何形如 202X-XX-XX 的日期并将其替换为今天
+              # 匹配并替换 README 中形如 YYYY-MM-DD 的日期
               readme_content = re.sub(r'\b20\d{2}-\d{2}-\d{2}\b', today_str, readme_content)
 
-              # 方案 B: 匹配并替换 README 中形如 YYYY年M月D日 / YYYY年MM月DD日 的中文日期
+              # 匹配并替换 README 中形如 YYYY年M月D日 / YYYY年MM月DD日 的中文日期
               readme_content = re.sub(r'20\d{2}年\d{1,2}月\d{1,2}[日号]', target_chinese_date, readme_content)
 
               with open(readme_path, 'w', encoding='utf-8') as f:
@@ -123,56 +122,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto-generate post for today and update README dates"
-          branch: main          
-          # 筛选出以 YYYY-MM-DD 开头的文件
-          valid_files = []
-          for file in all_files:
-              basename = os.path.basename(file)
-              if re.match(r'^\d{4}-\d{2}-\d{2}', basename):
-                  valid_files.append((basename, file))
-
-          if not valid_files:
-              print("No posts starting with YYYY-MM-DD found.")
-              exit(0)
-
-          # 按文件名降序排序，获取最新的文件
-          valid_files.sort(key=lambda x: x[0], reverse=True)
-          latest_basename, latest_file = valid_files[0]
-          print(f"Latest file found: {latest_file}")
-
-          # 提取旧日期
-          date_match = re.match(r'^(\d{4}-\d{2}-\d{2})', latest_basename)
-          old_date_str = date_match.group(1)
-
-          # 获取当天的日期
-          today_str = datetime.date.today().strftime('%Y-%m-%d')
-          if old_date_str == today_str:
-              print("The latest post is already dated today. Skipping creation.")
-              exit(0)
-
-          # 生成新文件名并构建路径
-          new_basename = latest_basename.replace(old_date_str, today_str, 1)
-          new_file = os.path.join(posts_dir, new_basename)
-
-          if os.path.exists(new_file):
-              print(f"File {new_file} already exists.")
-              exit(0)
-
-          # 读取旧文件内容并全局替换日期
-          with open(latest_file, 'r', encoding='utf-8') as f:
-              content = f.read()
-
-          new_content = content.replace(old_date_str, today_str)
-
-          # 写入新文件
-          with open(new_file, 'w', encoding='utf-8') as f:
-              f.write(new_content)
-
-          print(f"Successfully created new post: {new_file} with date {today_str}")
-          EOF
-
-      - name: 提交并推送修改
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: auto-generate post for today"
           branch: main
