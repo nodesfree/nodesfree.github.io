@@ -89,7 +89,8 @@ jobs:
                         content = f.read()
 
                       # 日期替换
-                      new_content = re.sub(r'\b20\d{2}-\d{1,2}-\d{1,2}\b', today_file_date_str, content)
+                      new_content = re.sub(r'\b20\d{2}-\d{1,2}-\d{1,2}\b', today_file_date_str, new_content)
+                      new_content = re.sub(r'\b20\d{2}-\d{1,2}-\d{1,2}\b', today_standard_date_str, new_content)
                       new_content = re.sub(r'20\d{2}年\d{1,2}月\d{1,2}[日号]', target_chinese_date, new_content)
                       new_content = re.sub(r'\b\d{1,2}月\d{1,2}[日号]', target_short_chinese_date, new_content)
                       new_content = re.sub(r'\b20\d{2}/\d{1,2}/\d{1,2}\b', target_slash_date, new_content)
@@ -117,6 +118,7 @@ jobs:
                   readme_content = f.read()
 
               readme_content = re.sub(r'\b20\d{2}-\d{1,2}-\d{1,2}\b', today_file_date_str, readme_content)
+              readme_content = re.sub(r'\b20\d{2}-\d{1,2}-\d{1,2}\b', today_standard_date_str, readme_content)
               readme_content = re.sub(r'20\d{2}年\d{1,2}月\d{1,2}[日号]', target_chinese_date, readme_content)
               readme_content = re.sub(r'\b\d{1,2}月\d{1,2}[日号]', target_short_chinese_date, readme_content)
               readme_content = re.sub(r'\b20\d{2}/\d{1,2}/\d{1,2}\b', target_slash_date, readme_content)
