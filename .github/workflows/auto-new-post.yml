@@ -36,16 +36,21 @@ jobs:
           # 获取当天的日期对象
           today = datetime.date.today()
           today_year = today.strftime('%Y')
+          today_month_no_zero = str(today.month)
           today_month_zero = today.strftime('%m')
+          today_day_no_zero = str(today.day)
           today_day_zero = today.strftime('%d')
           
-          # 准备多种格式（短横线统一采用补零格式）
+          # 准备多种格式：
+          # dash_no_zero 用于文件名（月份和日期去除0，例如 2026-9-26）
+          # dash_zero 用于文章及 README 内容（保留0，例如 2026-09-26）
           date_formats = {
-              "dash": f"{today_year}-{today_month_zero}-{today_day_zero}",          # 例如 2026-09-22（统一补零）
-              "chinese": f"{today_year}年{int(today_month_zero)}月{int(today_day_zero)}日", # 例如 2026年9月22日
-              "short_chinese": f"{int(today_month_zero)}月{int(today_day_zero)}日",       # 例如 9月22日
-              "slash": f"{today_year}/{int(today_month_zero)}/{int(today_day_zero)}",       # 例如 2026/9/22
-              "compact": f"{today_year}{today_month_zero}{today_day_zero}"               # 例如 20260922
+              "dash_no_zero": f"{today_year}-{today_month_no_zero}-{today_day_no_zero}",  # 用于文件名
+              "dash_zero": f"{today_year}-{today_month_zero}-{today_day_zero}",          # 用于正文/README
+              "chinese": f"{today_year}年{today_month_no_zero}月{today_day_no_zero}日",     # 例如 2026年9月26日
+              "short_chinese": f"{today_month_no_zero}月{today_day_no_zero}日",           # 例如 9月26日
+              "slash": f"{today_year}/{today_month_no_zero}/{today_day_no_zero}",         # 例如 2026/9/26
+              "compact": f"{today_year}{today_month_zero}{today_day_zero}"               # 例如 20260926
           }
 
           # ----------------- 1. 处理 _posts 目录下的最新文章 -----------------
@@ -54,7 +59,7 @@ jobs:
           valid_files = []
           for file in all_files:
               basename = os.path.basename(file)
-              if re.match(r'^\d{4}-\d{2}-\d{2}', basename):
+              if re.match(r'^\d{4}-\d{1,2}-\d{1,2}', basename):
                   valid_files.append((basename, file))
 
           if valid_files:
@@ -64,20 +69,29 @@ jobs:
               print(f"Latest file found: {latest_file}")
 
               # 提取旧文件名中的日期
-              date_match = re.match(r'^(\d{4})-(\d{2})-(\d{2})', latest_basename)
+              date_match = re.match(r'^(\d{4})-(\d{1,2})-(\d{1,2})', latest_basename)
               if date_match:
                   old_year, old_month, old_day = date_match.groups()
-                  old_date_dash = f"{old_year}-{old_month}-{old_day}"
+                  old_date_dash_1 = f"{old_year}-{old_month}-{old_day}"
+                  old_date_dash_2 = f"{old_year}-{int(old_month):02d}-{int(old_day):02d}"
               else:
-                  old_date_dash = ""
+                  old_date_dash_1 = ""
+                  old_date_dash_2 = ""
 
-              today_file_date_str = date_formats["dash"]
+              # 新文件名强制使用去前导零的格式
+              today_file_date_str = date_formats["dash_no_zero"]
 
-              if old_date_dash == today_file_date_str:
+              if (old_date_dash_1 == date_formats["dash_no_zero"] or 
+                  old_date_dash_1 == date_formats["dash_zero"] or 
+                  old_date_dash_2 == date_formats["dash_no_zero"] or 
+                  old_date_dash_2 == date_formats["dash_zero"]):
                   print("The latest post is already dated today. Skipping creation, but will check README.")
               else:
                   # 生成新文件名并构建路径
-                  new_basename = latest_basename.replace(old_date_dash, today_file_date_str, 1)
+                  new_basename = latest_basename.replace(old_date_dash_1, today_file_date_str, 1)
+                  if new_basename == latest_basename:
+                      new_basename = latest_basename.replace(old_date_dash_2, today_file_date_str, 1)
+                  
                   new_file = os.path.join(posts_dir, new_basename)
 
                   if os.path.exists(new_file):
@@ -87,10 +101,10 @@ jobs:
                       with open(latest_file, 'r', encoding='utf-8') as f:
                           content = f.read()
 
-                      # 替换正文中的日期（统一使用补零的短横线格式，不去除0）
-                      target_dash_date = date_formats["dash"]
+                      # 正文短横线日期使用保留前导零的格式
+                      target_dash_date = date_formats["dash_zero"]
 
-                      new_content = re.sub(r'\b20\d{2}-\d{2}-\d{2}\b', target_dash_date, content)
+                      new_content = re.sub(r'\b20\d{2}-\d{1,2}-\d{1,2}\b', target_dash_date, content)
                       new_content = re.sub(r'20\d{2}年\d{1,2}月\d{1,2}[日号]', date_formats["chinese"], new_content)
                       new_content = re.sub(r'\b\d{1,2}月\d{1,2}[日号]', date_formats["short_chinese"], new_content)
                       new_content = re.sub(r'\b20\d{2}/\d{1,2}/\d{1,2}\b', date_formats["slash"], new_content)
@@ -108,7 +122,7 @@ jobs:
                       with open(new_file, 'w', encoding='utf-8') as f:
                           f.write(new_content)
 
-                      print(f"Successfully created new post: {new_file} with zero-padded date format")
+                      print(f"Successfully created new post: {new_file} (filename without zero, content with zero)")
 
           # ----------------- 2. 自动更新根目录下的 README.md -----------------
           readme_path = "README.md"
@@ -117,9 +131,10 @@ jobs:
               with open(readme_path, 'r', encoding='utf-8') as f:
                   readme_content = f.read()
 
-              readme_dash_date = date_formats["dash"]
+              # README 中的短横线日期同样使用保留前导零的格式
+              readme_dash_date = date_formats["dash_zero"]
 
-              readme_content = re.sub(r'\b20\d{2}-\d{2}-\d{2}\b', readme_dash_date, readme_content)
+              readme_content = re.sub(r'\b20\d{2}-\d{1,2}-\d{1,2}\b', readme_dash_date, readme_content)
               readme_content = re.sub(r'20\d{2}年\d{1,2}月\d{1,2}[日号]', date_formats["chinese"], readme_content)
               readme_content = re.sub(r'\b\d{1,2}月\d{1,2}[日号]', date_formats["short_chinese"], readme_content)
               readme_content = re.sub(r'\b20\d{2}/\d{1,2}/\d{1,2}\b', date_formats["slash"], readme_content)
