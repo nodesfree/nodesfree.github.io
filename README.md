@@ -9,7 +9,7 @@
 
 ➖➖➖➖➖➖➖➖➖➖
 
-### [🐮88云加速机场 10元/月 每月200g](https://qq.88cloud.dpdns.org/#/register?code=n4KLfZJb)
+### [🐮88云加速机场 10元/月 每月200g](https://www.8891888.xyz/#/register?code=n4KLfZJb)
 
 ### ➡️不跑路 ➡️快 ➡️稳 ➡️服务好
 
@@ -21,7 +21,7 @@
 
 ### 🔥 大流量下载专用节点
 
-### [✈️ TG群组 ](https://t.me/+gfS8zRPNWMdmMjg1)          [🔗 官方网站 ](https://qq.88cloud.dpdns.org/#/register?code=n4KLfZJb)
+### [✈️ TG群组 ](https://t.me/+gfS8zRPNWMdmMjg1)          [🔗 官方网站 ](https://www.8891888.xyz/#/register?code=n4KLfZJb)
 
 ### [注册地址：【88云加速官网（点击注册）】 ](https://88cloud.dpdns.org/#/register?code=LSpR3sOK)
 
