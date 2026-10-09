@@ -200,5 +200,5 @@ baidusitemap:
 # sitemap 网站地图
 sitemap:
   path: sitemap.xml
-  tag: false
-  category: false
+  tag: true
+  category: true
