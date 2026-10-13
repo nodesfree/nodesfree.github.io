@@ -47,10 +47,10 @@ jobs:
           date_formats = {
               "dash_no_zero": f"{today_year}-{today_month_no_zero}-{today_day_no_zero}",  # 用于文件名
               "dash_zero": f"{today_year}-{today_month_zero}-{today_day_zero}",          # 用于正文/README
-              "chinese": f"{today_year}年{today_month_no_zero}月{today_day_no_zero}日",     # 例如 2026年9月26日
-              "short_chinese": f"{today_month_no_zero}月{today_day_no_zero}日",           # 例如 9月26日
-              "slash": f"{today_year}/{today_month_no_zero}/{today_day_no_zero}",         # 例如 2026/9/26
-              "compact": f"{today_year}{today_month_zero}{today_day_zero}"               # 例如 20260926
+              "chinese": f"{today_year}年{today_month_no_zero}月{today_day_no_zero}日",     
+              "short_chinese": f"{today_month_no_zero}月{today_day_no_zero}日",           
+              "slash": f"{today_year}/{today_month_no_zero}/{today_day_no_zero}",         
+              "compact": f"{today_year}{today_month_zero}{today_day_zero}"               
           }
 
           # ----------------- 1. 处理 _posts 目录下的最新文章 -----------------
